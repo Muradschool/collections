@@ -17,4 +17,4 @@ def MenM(amount):
             MnmZak.update({randomColor : 1})
 
     return MnmZak
-print(sorted(MenM(HoeveelheidMenM).items()))
+print(sorted(MenM(HoeveelheidMenM).items(), key=lambda kv: kv[1], reverse=True))
